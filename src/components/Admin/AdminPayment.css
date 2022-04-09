@@ -1,0 +1,15 @@
+.cardds {
+  margin: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 40px;
+}
+
+.needcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.text-secondary {
+  color: #ff407b !important;
+}

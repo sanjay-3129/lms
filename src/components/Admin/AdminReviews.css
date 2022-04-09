@@ -1,0 +1,227 @@
+.heading {
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.card1 {
+  background-color: #fff;
+  padding: 2rem;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+/* Three column layout */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.side {
+  width: 15%;
+  margin-top: 10px;
+}
+
+.needleft {
+  margin-left: 4rem;
+}
+
+.middle {
+  margin-top: 10px;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+  margin-left: -5rem;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {
+  width: 0%;
+  height: 18px;
+  background-color: #04aa6d;
+}
+.bar-4 {
+  width: 0%;
+  height: 18px;
+  background-color: #2196f3;
+}
+.bar-3 {
+  width: 0%;
+  height: 18px;
+  background-color: #00bcd4;
+}
+.bar-2 {
+  width: 0%;
+  height: 18px;
+  background-color: #ff9800;
+}
+.bar-1 {
+  width: 0%;
+  height: 18px;
+  background-color: #f44336;
+}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side,
+  .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+  .needleft {
+    margin-left: 0rem;
+  }
+}
+
+.card1 {
+  background-color: #fff;
+  padding: 2rem;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.testimonial-box img {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 0 15px;
+}
+.testimonial-box h4 {
+  color: #5969ff;
+}
+.testimonial-box p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+}
+.ratings-icons {
+  color: #fec42d;
+  margin-bottom: 15px;
+}
+.checked {
+  color: orange;
+  font-size: 1.2rem;
+}
+.not {
+  color: #71748d;
+  font-size: 1.2rem;
+}
+.needtop10px {
+  margin-top: 1rem;
+}
+
+@keyframes s3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+.card-text {
+  height: 2rem;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 150px;
+}
+
+@media screen and (max-width: 370px) {
+  .h3tag {
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+}
